@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eisenhower Matrix</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; 
+            align-items: center;
+            height: 100vh;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }   
+ 
+        .matrix-container {
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            width: 60%;
+            height: 60%;
+            gap: 3px;
+            /* margin: 0 auto;  */
+        }
+
+        .quadrant {
+            width: 48%;
+            height: 48%;
+            border: 1px solid black;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .urgent-important {
+            background-color: lightblue;
+        }
+
+        .important-not-urgent {
+            background-color: lightgoldenrodyellow;
+        }
+
+        .urgent-not-important {
+            background-color: lightgrey;
+        }
+
+        .not-urgent-not-important {
+            background-color: lightcyan;
+        }
+
+        .add-button {
+            position: absolute; 
+            top: 49%; 
+            left: 48%; 
+            transform: translate(-50%, -50%); 
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Eisenhower Matrix</h1>
+    <div class="matrix-container">
+        <div class="quadrant urgent-important">Urgent & Important</div>
+        <div class="quadrant important-not-urgent">Important, Not Urgent</div>
+        <div class="quadrant urgent-not-important">Urgent, Not Important</div>
+        <div class="quadrant not-urgent-not-important">Not Urgent, Not Important</div>
+        <button class="add-button">+</button>
+    </div>
+    
+</body>
+</html>
